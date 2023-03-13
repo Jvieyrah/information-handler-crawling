@@ -1,1 +1,5 @@
--e .
+requests==2.24.0
+pymongo==3.11.0
+python-decouple==3.3
+git+https://github.com/betrybe/pytest-dependency
+git+https://github.com/betrybe/pytest-dependency
