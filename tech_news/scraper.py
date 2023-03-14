@@ -35,7 +35,7 @@ def scrape_next_page_link(html_content):
     link = selector.css(
         '.nav-links > a.next::attr(href)'
     ).get()
-    if link is not None: 
+    if link is not None:
         return link
     else:
         return None
@@ -87,6 +87,3 @@ def get_tech_news(amount):
                 break
     create_news(list_news)
     return list_news
-    
- 
-        
