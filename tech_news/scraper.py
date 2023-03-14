@@ -5,9 +5,9 @@ from bs4 import BeautifulSoup
 from tech_news.database import create_news
 
 url = 'https://blog.betrybe.com/'
+
+
 # Requisito 1
-
-
 def fetch(url):
     """Seu código deve vir aqui"""
     time.sleep(1)
@@ -32,8 +32,8 @@ def scrape_updates(html_content):
 def scrape_next_page_link(html_content):
     """Seu código deve vir aqui"""
     selector = Selector(html_content)
-    link =  selector.css(
-         '.nav-links > a.next::attr(href)'
+    link = selector.css(
+        '.nav-links > a.next::attr(href)'
     ).get()
     if link is not None: 
         return link
@@ -64,34 +64,7 @@ def scrape_news(html_content):
         "summary": summary,
         "category": category,
     }
-    # print(dict_news)
     return dict_news
-# def scrape_news(html_content):
-#     """Seu código deve vir aqui"""
-#     selector = Selector(html_content)
-#     url = selector.css("link[rel='canonical']::attr(href)").get().strip()
-#     title = selector.css('h1.entry-title::text').get().strip()
-#     timestamp = selector.css('li.meta-date::text').get().strip()
-#     writer = selector.css('span.author > a::text').get().strip(),
-#     reading_time = int(
-#             selector.css('li.meta-reading-time::text').get()[0:2]
-#             )
-#     summary = selector.css(
-#         'div.entry-content:first-child > p::text'
-#         ).get().strip() + selector.css(
-#             'div.entry-content:first-child p > a::text'
-#             ).get().strip()
-#     category = selector.css('a.category-style > span.label::text').get().strip()
-
-#     return {
-#         'url': url,
-#         'title': title,
-#         'timestamp': timestamp,
-#         'writer': writer,
-#         'reading_time': reading_time ,
-#         'summary': summary,
-#         'category': category
-#     }
 
 
 # Requisito 5
