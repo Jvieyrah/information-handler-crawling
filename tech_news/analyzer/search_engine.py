@@ -10,7 +10,8 @@ def search_by_title(title):
     for news in found_news:
         response.append((news["title"], news["url"]))
     return response
-   
+
+
 # Requisito 8
 def search_by_date(date):
     response = []
@@ -30,7 +31,9 @@ def search_by_date(date):
 # Requisito 9
 def search_by_category(category):
     """Seu código deve vir aqui"""
-    found_news = search_news({"category": {"$regex": category, "$options": "i"}})
+    found_news = search_news(
+        {"category": {"$regex": category, "$options": "i"}}
+        )
     response = []
     for news in found_news:
         response.append((news["title"], news["url"]))
