@@ -7,7 +7,7 @@ from tech_news.database import create_news
 url = 'https://blog.betrybe.com/'
 
 
-# Requisito 1
+# Requisito 01
 def fetch(url):
     """Seu código deve vir aqui"""
     time.sleep(1)
