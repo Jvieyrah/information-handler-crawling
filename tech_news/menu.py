@@ -37,7 +37,7 @@ def analyzer_menu():
         case "4":
             print(top_5_categories())   
         case "5":
-            sys.exit()
+            print("Encerrando script")
         case _:
             sys.stderr.write("Opção inválida\n")
 
