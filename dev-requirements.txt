@@ -1,38 +1,5 @@
 -r requirements.txt
 
-attrs==22.2.0
-beautifulsoup4==4.11.2
-black==22.3.0
-bs4==0.0.1
-certifi==2022.12.7
-chardet==3.0.4
-click==8.1.3
-cssselect==1.2.0
-flake8==4.0.1
-idna==2.10
-iniconfig==2.0.0
-lxml==4.9.2
-mccabe==0.6.1
-mypy-extensions==1.0.0
-packaging==23.0
-parsel==1.7.0
-pathspec==0.11.0
-platformdirs==3.1.1
-pluggy==1.0.0
-py==1.11.0
-pycodestyle==2.8.0
-pyflakes==2.4.0
-pymongo==3.11.0
-pytest==7.0.1
-pytest-dependency==0.1.0
-pytest-json==0.4.0
-pytest-mock==3.5.1
-python-decouple==3.3
-requests==2.24.0
-soupsieve==2.4
-tomli==2.0.1
-urllib3==1.25.11
-w3lib==2.1.1
 wheel==0.37.1
 black==22.3.0
 flake8==4.0.1
@@ -43,4 +10,5 @@ parsel==1.7.0
 requests==2.24.0
 pymongo==3.11.0
 python-decouple==3.3
+beautifulsoup4==4.11.2
 git+https://github.com/betrybe/pytest-dependency
