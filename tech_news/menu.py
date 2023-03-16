@@ -1,16 +1,17 @@
 import sys
 from tech_news.analyzer.search_engine import (
-    search_by_title, search_by_date, search_by_category )
+    search_by_title, search_by_date, search_by_category)
 
 from tech_news.analyzer.ratings import top_5_categories
 
 from tech_news.scraper import get_tech_news
 
+
 # Requisitos 11 e 12
 def analyzer_menu():
     """Seu código deve vir aqui"""
     input_user = input(
-    """Selecione uma das opções a seguir:
+        """Selecione uma das opções a seguir:
  0 - Popular o banco com notícias;
  1 - Buscar notícias por título;
  2 - Buscar notícias por data;
@@ -41,5 +42,3 @@ def analyzer_menu():
             sys.stderr.write("Opção inválida\n")
 
     return input_user
-
-
